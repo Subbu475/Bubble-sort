@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bubble Sort Visualizer</h1>
+        <div class="content">
+            <!-- Main Sorting Visualizer Section -->
+            <div class="visualizer">
+                <p id="explanation">Click "Generate New Array" to start!</p>
+                <div class="controls">
+                    <button id="generate">Generate New Array</button>
+                    <button id="start">Start Bubble Sort</button>
+                    <button id="pause">Pause</button>
+                    <button id="resume">Resume</button>
+                </div>
+                <div id="array-container"></div>
+            </div>
+
+            <!-- Side Panel Section -->
+            <div class="info-panel">
+                <h2>What is Bubble Sort?</h2>
+                <p>
+                    <strong>Bubble Sort</strong> is a simple sorting algorithm that works by repeatedly stepping through
+                    the list, comparing adjacent elements, and swapping them if they are in the wrong order. This
+                    process is repeated until no more swaps are needed, meaning the array is sorted.
+                </p>
+
+                <h3>How Bubble Sort Works</h3>
+                <p>
+                    Bubble Sort compares pairs of adjacent elements, starting from the beginning of the array. If the
+                    first element is greater than the second, they are swapped. This process is repeated for each pair
+                    in the array. After each pass through the array, the largest element "bubbles" up to its correct
+                    position at the end.
+                </p>
+
+                <h3>Step-by-Step Process:</h3>
+                <ul id="steps">
+                    <li><strong>Step 1:</strong> Compare the first two adjacent elements of the array.</li>
+                    <li><strong>Step 2:</strong> Swap them if the first element is greater than the second.</li>
+                    <li><strong>Step 3:</strong> Move to the next pair of adjacent elements and repeat.</li>
+                    <li><strong>Step 4:</strong> Continue the process until the entire array is sorted.</li>
+                    <li><strong>Step 5:</strong> After each pass, the largest unsorted element is guaranteed to be in
+                        its correct final position.</li>
+                </ul>
+
+                <h3>Key Characteristics of Bubble Sort:</h3>
+                <ul>
+                    <li>It is an <strong>O(n²)</strong> algorithm, meaning its performance degrades quickly as the size
+                        of the array increases.</li>
+                    <li>It is simple and easy to understand, but inefficient for large datasets.</li>
+                </ul>
+
+                <h3>Visualizing Bubble Sort</h3>
+                <p>
+                    As the algorithm runs, you will see comparisons and swaps happening in real time, and the largest
+                    element at each pass will be highlighted in green, indicating it's in its correct position.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
